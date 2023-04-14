@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+;
+
+form>h3 {
+    font-family: 'Pacifico', cursive !important;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.imgContent {
+    width: fit-content;
+}
+
+.avtoriz {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.formSec {
+    max-width: 500px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+
+form input {
+    max-width: 320px;
+    outline: none !important;
+    color: gray;
+    border: none;
+    width: 80%;
+    padding: 10px 15px;
+    border: 1px solid #8080806e;
+    border-radius: 5px;
+}
+
+
+
+.imgContent>img {
+    max-width: 400px;
+    width: 300px !important;
+}
+
+@media (max-width:750px) {
+    .formSec {
+        width: 100% !important;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width:580px) {
+    .imgContent {
+        display: none;
+    }
+
+    .uk-container {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .avtoriz {
+        padding: 0 !important;
+width: 100%;
+    }
+    
+
+    .formSec {
+        max-width: none;
+        background-image: url(../uikit/images/regFormImg.png);
+        background-position: center;
+        background-size: cover;
+        width: 100% !important;
+        height: 100vh;
+        padding: 30px 10px;
+    }
+
+    .regInps {
+        background: none;
+        padding: 10px 15px;
+        border: 2px solid white;
+        backdrop-filter: blur(3px);
+        color: gray;
+    }
+
+    h3 {
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+    }
+
+    .regInps::placeholder {
+        color: gray;
+    }
+}
+
+@media (max-width:380px) {
+    h3 {
+        font-size: 17px
+    }
+}

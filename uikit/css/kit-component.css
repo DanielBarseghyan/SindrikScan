@@ -1,0 +1,17 @@
+.staBtn {
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px 15px;
+    color: white;
+    background: #B7C203;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transition: .2s;
+}
+.staBtn:hover{
+    background: #8F9800;
+}
+.staBtn:active{
+    background-color: #737A00;
+}
